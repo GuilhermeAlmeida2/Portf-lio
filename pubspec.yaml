@@ -30,9 +30,17 @@ flutter:
   uses-material-design: true
 
   assets:
-   - assets/etec_logo.png
-   - assets/imt_logo.png
    - assets/imt.jpg
    - assets/etec.jpg
+  #  Icons
+   - assets/icon/angular_icon.png
+   - assets/icon/angular_icon.png
+   - assets/icon/flutter_icon.png
+   - assets/icon/git_icon.png
+   - assets/icon/github_icon.png
+   - assets/icon/google_icon.png
+   - assets/icon/ionic_icon.png
+   - assets/icon/java_icon.png
+   - assets/icon/linkedin_icon.png
 
   

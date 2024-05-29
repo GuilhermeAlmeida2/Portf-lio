@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:portifolio/pages/home_page.dart';
+import 'package:portifolio/pages/second_page.dart';
 
 class App extends StatelessWidget {
   const App({super.key});
@@ -9,7 +9,8 @@ class App extends StatelessWidget {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Portfólio',
-      home: HomePage(),
+      home: Contact(),
+      routes: {},
     );
   }
 }
