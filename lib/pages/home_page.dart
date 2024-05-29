@@ -4,8 +4,8 @@ import 'package:portifolio/breakpoints.dart';
 import 'package:portifolio/widgets/app_bar/mobile_app_bar.dart';
 import 'package:portifolio/widgets/app_bar/web_app_bar.dart';
 
-class Portifolio extends StatelessWidget {
-  const Portifolio({super.key});
+class HomePage extends StatelessWidget {
+  const HomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -24,7 +24,12 @@ class Portifolio extends StatelessWidget {
         body: Column(
           children: [
             CarouselSlider(
-              options: CarouselOptions(),
+              options: CarouselOptions(
+                autoPlay: true,
+                autoPlayInterval: const Duration(seconds: 3),
+                autoPlayAnimationDuration: const Duration(milliseconds: 800),
+                autoPlayCurve: Curves.fastOutSlowIn,
+              ),
               items: ['assets/imt.jpg', 'assets/etec.jpg'].map((imagePath) {
                 return Builder(
                   builder: (BuildContext context) {

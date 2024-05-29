@@ -28,6 +28,9 @@ class MobileAppBar extends StatelessWidget {
           padding: const EdgeInsets.all(8.0),
           child: IconButton(
             onPressed: () {
+              Navigator.pushNamed(
+                  context, '/contact'); // Assuming a contact screen exists
+
               log('Pressed Contato');
             },
             icon: const Icon(Icons.person),
